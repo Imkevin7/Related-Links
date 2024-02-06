@@ -1,0 +1,51 @@
+.rl-wrap {
+  padding: 1em 1em 2em 1em;
+}
+.rl-wrap .rl {
+  max-width: 90%;
+  margin: auto;
+}
+.rl-wrap .rl h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.rl-wrap .rl ul {
+  list-style-type: none !important;
+}
+.rl-wrap .rl ul li {
+  padding: 0.5em;
+  margin-bottom: 0;
+}
+.rl-wrap .rl ul li::before {
+  color: white;
+}
+.rl-wrap .rl ul li a {
+  color: white;
+  text-decoration: underline;
+}
+.rl-wrap .rl ul li a:hover {
+  color: black;
+}
+.rl-wrap .rl ul.remove-list-styles li::before {
+  content: "";
+}
+
+@media screen and (min-width: 600px) {
+  .rl {
+    padding: 1em 2em;
+  }
+  .rl ul {
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .rl {
+    padding: 1em 2em;
+  }
+  .rl ul {
+    -moz-columns: 4;
+         columns: 4;
+  }
+}

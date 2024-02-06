@@ -1,0 +1,48 @@
+// style.scss<style>
+
+    .rl-wrap{
+        padding: 1em 1em 2em 1em;
+        .rl{ 
+            max-width: 90%; margin: auto;
+            h2{
+                color: white; 
+                font-size: 1.8rem; 
+                font-weight: 400;
+            }
+            ul{
+                list-style-type: none !important;
+                li{
+                    padding: .5em; 
+                    margin-bottom: 0;
+                    &::before{
+                        color: white;
+                    }
+                    a{
+                        color: white; 
+                        text-decoration: underline;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .rl ul.remove-list-styles li::before{content:"";}
+    }
+          
+    @media screen and (min-width: 600px){
+        .rl{
+            padding: 1em 2em;
+            ul{
+                columns: 2;
+            }
+        }  
+    }
+    @media screen and (min-width: 1000px){
+        .rl{
+            padding: 1em 2em;
+            ul{
+                columns: 4;
+            }
+        }  
+    }
