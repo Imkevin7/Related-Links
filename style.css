@@ -1,0 +1,75 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+html p, body p {
+  font-size: 1.125em;
+  line-height: 1.65em;
+  color: #333333;
+  font-weight: 300;
+}
+html h3, body h3 {
+  color: #c22033;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+html ul li, body ul li {
+  line-height: 1.5em;
+  margin-bottom: 0.5em;
+  padding-left: 0.5em;
+  position: relative;
+}
+
+.rl-wrap {
+  padding: 1em 1em 2em 1em;
+}
+.rl-wrap .rl {
+  max-width: 90%;
+  margin: auto;
+}
+.rl-wrap .rl h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.rl-wrap .rl ul {
+  list-style-type: none !important;
+}
+.rl-wrap .rl ul li {
+  padding: 0.5em;
+  margin-bottom: 0;
+}
+.rl-wrap .rl ul li::before {
+  color: white;
+}
+.rl-wrap .rl ul li a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.rl-wrap .rl ul li a:hover {
+  color: black;
+}
+.rl-wrap .rl ul.remove-list-styles li::before {
+  content: "";
+}
+
+@media screen and (min-width: 600px) {
+  .rl {
+    padding: 1em 2em;
+  }
+  .rl ul {
+    -moz-columns: 2;
+         columns: 2;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .rl {
+    padding: 1em 2em;
+  }
+  .rl ul {
+    -moz-columns: 4;
+         columns: 4;
+  }
+}

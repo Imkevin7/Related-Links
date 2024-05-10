@@ -1,5 +1,5 @@
 // style.scss<style>
-
+@import "page-content";
     .rl-wrap{
         padding: 1em 1em 2em 1em;
         .rl{ 
@@ -20,6 +20,7 @@
                     a{
                         color: white; 
                         text-decoration: underline;
+                        font-weight: 600;
                         &:hover{
                             color: black;
                         }
